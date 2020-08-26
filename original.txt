@@ -1,0 +1,16 @@
+Version Control Systems
+What is a “version control System”?
+
+Version control systems are a category of software tools that helps record changes to files by keeping a track of modifications done to the code.
+
+Use of Version Control System:
+
+A repository: It can be thought as a database of changes. It contains all the edits and historical versions (snapshots) of the project.
+Copy of Work (sometimes called as checkout): It is the personal copy of all the files in a project. You can edit to this copy, without affecting the work of others and you can finally commit your changes to a repository when you are done making your changes.
+Types of Version Control Systems:
+
+Local Version Control Systems
+Centralized Version Control Systems
+Distributed Version Control Systems
+Local Version Control Systems: It is one of the simplest forms and has a database that kept all the changes to files under revision control. RCS is one of the most common VCS tools. It keeps patch sets (differences between files) in a special format on disk. By adding up all the patches it can then re-create what any file looked like at any point in time.
+
