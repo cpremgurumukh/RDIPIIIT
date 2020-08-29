@@ -4,18 +4,25 @@
 </head>
 <body>
 <h1>Input Elements</h1>
-<form>
+<form action="PayslipServlet" method="get">
+	<div>
 	<label for="fname">Enter Your Name:</label><br>
 	<input type="text" id="fname" name="fname"><br>
+	</div>
+	<div>
 	<label for="fnumber">Enter Your Number:</label><br>
 	<input type="number" id="fnumber" name="fnumber"><br>
+	</div>
+	<div>
 	<h1>Choose Your Course</h1>
-	<input type="radio" id="male" name="gender">
-  <label for="male">Bachelors</label><br>
-  <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Masters</label><br>
+	<input type="radio" id="course1" name="course1">
+  <label for="course1">Bachelors</label><br>
+  <input type="radio" id="course1" name="course1" value="course1">
+  <label for="course1">Masters</label><br>
 	<label="desc">Description:</label><br>
 	<input type="text" id="desc" name="desc" value=""><br>
+	</div>
+	<div>
 	<h1>Choose the Subjects of your interest</h1>
 	<label for="interest">C</label>
 	<input type="checkbox" id="interset" name="interest"><br>
@@ -27,7 +34,11 @@
 	<input type="checkbox" id="interset" name="interest"><br>
 	<label for="interest">CSS</label>
 	<input type="checkbox" id="interset" name="interest"><br>
-	<input type="submit" value="Submit">
+	</div>
+	 <script> function output(){document.write("Name: "+document.getElementById('fname').value+" "+""+document.getElementById('fnumber').value+"<br>"+"DOB: "+document.getElementById('course1').value+document.getElementById('interest').value);
+		 }
+	</script>
+        <button onclick="output()">Submit</button>
 </form>
 </body>
 </html>
